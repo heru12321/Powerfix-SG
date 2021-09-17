@@ -55,12 +55,6 @@ body {
 		font-size: 32px;
 	}
 
-	#prev-text {
-		left: -105px !important;
-	}
-	#after-text {
-		right: -105px !important;
-	}
 	#myBtn {
 		display: none;
 		position: fixed;
@@ -125,12 +119,6 @@ body {
 	.jumbotron .display-3 {
 		font-size: 20px !important;
 	}
-	#prev-text {
-		left: -35px !important;
-	}
-	#after-text {
-		right: -35px !important;
-	}
 }
 /* Navbar */
 #topnav {
@@ -176,24 +164,9 @@ body {
 
 /*Jumbotron*/
 .jumbotron {
-	background-image: url(img/jumbotron-bg.jpg);
 	background-size: cover;
 	height: 640px;
 	position: relative;
-	animation: animate 15s steps(1) infinite;
-}
-
-@keyframes animate {
-	0%,
-	100% {
-		background-image: url(img/jumbotron-bg.jpg);
-	}
-	25% {
-		background-image: url(img/workingspace.png);
-	}
-	50% {
-		background-image: url(img/img1.png);
-	}
 }
 
 .jumbotron .container {
