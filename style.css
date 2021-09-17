@@ -54,6 +54,34 @@ body {
 	.testimonial h5 {
 		font-size: 32px;
 	}
+
+	#prev-text {
+		left: -105px !important;
+	}
+	#after-text {
+		right: -105px !important;
+	}
+	#myBtn {
+		display: none;
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: rgba(160, 38, 38, 0.5);
+		color: white;
+		cursor: pointer;
+		padding: 10px;
+		border-radius: 4px;
+		width: 45px;
+		height: 45px;
+	}
+
+	#myBtn:hover {
+		background-color: #555;
+	}
 }
 
 /* Mobile */
@@ -89,6 +117,19 @@ body {
 	}
 	#textdesk {
 		font-size: 20px;
+	}
+	.jumbotron .display-4 {
+		font-size: 50px !important;
+		margin-top: 30px !important;
+	}
+	.jumbotron .display-3 {
+		font-size: 20px !important;
+	}
+	#prev-text {
+		left: -35px !important;
+	}
+	#after-text {
+		right: -35px !important;
 	}
 }
 /* Navbar */
@@ -157,7 +198,6 @@ body {
 
 .jumbotron .container {
 	position: relative;
-	z-index: 1;
 }
 
 .jumbotron::after {
@@ -177,26 +217,8 @@ body {
 	margin-top: 150px;
 	font-weight: 400;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-	font-size: 14px;
+	font-size: 80px;
 	font-family: 'Open Sans';
-}
-
-.display-4::before {
-	content: '';
-	animation: changetitle 15s steps(1) infinite;
-}
-
-@keyframes changetitle {
-	0%,
-	100% {
-		content: 'Profesional Repair';
-	}
-	25% {
-		content: 'Apple Certified Technician';
-	}
-	50% {
-		content: 'Quick + Quality';
-	}
 }
 
 .jumbotron .display-3 {
@@ -206,25 +228,7 @@ body {
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 	font-family: 'Open Sans';
 	font-weight: 400;
-	font-size: 28px;
-}
-
-.display-3::before {
-	content: '';
-	animation: changetext 15s steps(1) infinite;
-}
-
-@keyframes changetext {
-	0%,
-	100% {
-		content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod maxime iusto quaerat nam, consequatur neque ullam. Profesional Repain';
-	}
-	25% {
-		content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod maxime iusto quaerat nam, consequatur neque ullam. Apple Certified Technician';
-	}
-	50% {
-		content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod maxime iusto quaerat nam, consequatur neque ullam. Quick + Quality';
-	}
+	font-size: 27px;
 }
 
 /*Jumbotron*/
