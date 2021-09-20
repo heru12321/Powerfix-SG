@@ -162,10 +162,20 @@ body {
 	transform: scale(1.5);
 }
 
+.devicename:hover {
+	cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.9) !important;
+}
+
+.problemname:hover {
+	cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.9) !important;
+}
+
 /*Jumbotron*/
 .jumbotron {
 	background-size: cover;
-	height: 640px;
+	height: 790px;
 	position: relative;
 }
 
