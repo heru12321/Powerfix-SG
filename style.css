@@ -26,11 +26,9 @@ body {
 	.navbar-brand,
 	.nav-link {
 		color: white !important;
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 	}
 
 	.nav-link {
-		text-transform: uppercase;
 		margin-right: 30px;
 	}
 	/*Jumbotron*/
@@ -148,7 +146,7 @@ body {
 }
 
 .nav-tabs > li > a:focus {
-	background-color: rgb(160, 38, 38) !important;
+	background-color: rgba(160, 38, 38, 0.9) !important;
 }
 
 /* Utility */
@@ -170,6 +168,14 @@ body {
 .problemname:hover {
 	cursor: pointer;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.9) !important;
+}
+
+.iconcfj:hover {
+	color: rgb(32, 30, 30);
+}
+
+.linksimpul:hover {
+	color: rgba(160, 38, 38, 0.9) !important;
 }
 
 /*Jumbotron*/
