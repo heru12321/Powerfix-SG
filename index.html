@@ -154,13 +154,30 @@
                                     id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false"></i>
                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <input type="text" id="idinput">
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <form id="searchForm" onsubmit="return checkInput()">
+                                       <div class="input-group">
+                                          <input id="isisiswa" class="form-control" autocomplete="off">
+                                          <div class="input-group-append">
+                                             <button class="btn btn-navbar"
+                                                style="background: #FFF6E3; left: 0px; border-radius: 0px 40px 40px 0px"
+                                                type="submit">
+                                                <i class="fas fa-search"></i>
+                                             </button>
+                                             <!-- Submit JQuery di Head-->
+
+                                          </div>
+                                       </div>
+                                    </form>
                                  </div>
                               </div>
                            </div>
+                           <script>
+                              function checkInput() {
+                                 var query = document.getElementById('isisiswa').value;
+                                 window.find(query);
+                                 return false;
+                              }
+                           </script>
 
                         </div>
                      </div>
@@ -1045,7 +1062,7 @@
                   <div class="row justify-content-center mr-3 ml-3">
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone12pro.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 12 Pro Max</h5>
@@ -1054,7 +1071,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone12pro.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;" id="devicename">iPhone 12 Pro</h5>
@@ -1063,7 +1080,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone12.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 12 Mini</h5>
@@ -1072,7 +1089,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone12.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 12</h5>
@@ -1081,7 +1098,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphonese.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone SE 2020</h5>
@@ -1090,7 +1107,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone11.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 11 Max</h5>
@@ -1099,7 +1116,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone11.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 11 Pro</h5>
@@ -1108,7 +1125,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone11.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 11</h5>
@@ -1117,7 +1134,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphonexs.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone Xs Max</h5>
@@ -1126,7 +1143,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphonexs.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone Xs</h5>
@@ -1135,7 +1152,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphonexr.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone Xr</h5>
@@ -1144,7 +1161,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphonex.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone X</h5>
@@ -1153,7 +1170,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone8.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 8 Plus</h5>
@@ -1162,7 +1179,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone8.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 8</h5>
@@ -1171,7 +1188,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone7plus.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 7 Plus</h5>
@@ -1180,7 +1197,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone7.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 7</h5>
@@ -1189,7 +1206,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone6s.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 6s Plus</h5>
@@ -1198,7 +1215,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone6s.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 6s</h5>
@@ -1207,7 +1224,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone6.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 6 Plus</h5>
@@ -1216,7 +1233,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone6.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 6</h5>
@@ -1225,7 +1242,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone5s.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 5SE</h5>
@@ -1234,7 +1251,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone5s.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 5S</h5>
@@ -1243,8 +1260,8 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
-                              style="width: 100px; height: 150px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone5c.jpg
+                           " alt="Card image cap" style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 5C</h5>
                            </div>
@@ -1252,7 +1269,7 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quoteiphone', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone-xr.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/iphone5.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iPhone 5</h5>
@@ -1396,8 +1413,8 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteandroid', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/samsung_galaxy_note9-png-715x1293-2.png"
-                              alt="Card image cap" style="width: 100px; height: 150px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/lg.jpg" alt="Card image cap"
+                              style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">LG</h5>
                            </div>
@@ -1406,8 +1423,8 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteandroid', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/samsung_galaxy_note9-png-715x1293-2.png"
-                              alt="Card image cap" style="width: 100px; height: 150px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/google-pixel-3-xl.jpg" alt="Card image cap"
+                              style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Google Pixel</h5>
                            </div>
@@ -1416,8 +1433,8 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteandroid', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/samsung_galaxy_note9-png-715x1293-2.png"
-                              alt="Card image cap" style="width: 100px; height: 150px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/motorola.jpg" alt="Card image cap"
+                              style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Motorola</h5>
                            </div>
@@ -1426,7 +1443,7 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteandroid', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/samsung_galaxy_note9-png-715x1293-2.png"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/OnePlus-6T-e1555417550828.jpg"
                               alt="Card image cap" style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">One Plus</h5>
@@ -1436,7 +1453,7 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteandroid', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/samsung_galaxy_note9-png-715x1293-2.png"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/HTC-U-Series-e1555420057395.jpg"
                               alt="Card image cap" style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">HTC</h5>
@@ -1446,7 +1463,7 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteandroid', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/samsung_galaxy_note9-png-715x1293-2.png"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/huawei-nova-series.jpg"
                               alt="Card image cap" style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Huawei</h5>
@@ -1456,8 +1473,8 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteandroid', 'quoteiphoneproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/samsung_galaxy_note9-png-715x1293-2.png"
-                              alt="Card image cap" style="width: 100px; height: 150px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/nokia-phone.png" alt="Card image cap"
+                              style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">...Other</h5>
                            </div>
@@ -1488,8 +1505,8 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quotecomputer', 'quotecomputerproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/center_facing.png" alt="Card image cap"
-                              style="width: 100px; height: 150px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/desktop_transparent.png"
+                              alt="Card image cap" style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">PC Desktop</h5>
                            </div>
@@ -1498,7 +1515,7 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quotecomputer', 'quotecomputerproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/center_facing.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/macbook-repair.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">MacBook</h5>
@@ -1508,7 +1525,7 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quotecomputer', 'quotecomputerproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/center_facing.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/imac-pro-repair.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">iMac</h5>
@@ -1518,8 +1535,8 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quotecomputer', 'quotecomputerproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/center_facing.png" alt="Card image cap"
-                              style="width: 100px; height: 150px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/chromebook-250x250.jpg"
+                              alt="Card image cap" style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Chromebook</h5>
                            </div>
@@ -1662,8 +1679,8 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quotetablet', 'quotetabletproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/ipad-mini-2-1.jpg" alt="Card image cap"
-                              style="width: 100px; height: 150px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/Microsoft-Surface-250x250.jpg"
+                              alt="Card image cap" style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Surface</h5>
                            </div>
@@ -1671,8 +1688,8 @@
                      </div>
                      <div class="card text-center m-2 devicename" onclick="replace('quotetablet', 'quotetabletproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/ipad-mini-2-1.jpg" alt="Card image cap"
-                              style="width: 100px; height: 150px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/Samsung-Tablet-250x250.jpg"
+                              alt="Card image cap" style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Samsung Tablet</h5>
                            </div>
@@ -1787,8 +1804,7 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quotegameconsole', 'quotegameconsoleproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0"
-                              src="img/playstation-4-slim-vertical-product-shot-01-us-07sep16.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/xbox-250x250.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Xbox</h5>
@@ -1809,8 +1825,7 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quotegameconsole', 'quotegameconsoleproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0"
-                              src="img/playstation-4-slim-vertical-product-shot-01-us-07sep16.png" alt="Card image cap"
+                        <center><img class="card-img-top mt-2 mb-0" src="img/Nintendo-250x250.jpg" alt="Card image cap"
                               style="width: 100px; height: 150px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Nintendo</h5>
@@ -1895,8 +1910,8 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteapplewatch', 'quoteapplewatchproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/apple-watch-5.jpg" alt="Card image cap"
-                              style="width: 100px; height: 140px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/apple-watch-250x250.jpg"
+                              alt="Card image cap" style="width: 100px; height: 140px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Apple Watch</h5>
                            </div>
@@ -1905,8 +1920,8 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteapplewatch', 'quoteapplewatchproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/apple-watch-5.jpg" alt="Card image cap"
-                              style="width: 100px; height: 130px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/apple-watch-series-se.jpg"
+                              alt="Card image cap" style="width: 100px; height: 130px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Apple Watch Series SE</h5>
                            </div>
@@ -1935,8 +1950,8 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteapplewatch', 'quoteapplewatchproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/apple-watch-5.jpg" alt="Card image cap"
-                              style="width: 100px; height: 130px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/apple-watch-series-4.jpg"
+                              alt="Card image cap" style="width: 100px; height: 130px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Apple Watch Series 4 44mm</h5>
                            </div>
@@ -1945,8 +1960,8 @@
                      <div class="card text-center m-2 devicename"
                         onclick="replace('quoteapplewatch', 'quoteapplewatchproblem')"
                         style="width:150px; height: 190px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <center><img class="card-img-top mt-2 mb-0" src="img/apple-watch-5.jpg" alt="Card image cap"
-                              style="width: 100px; height: 130px;">
+                        <center><img class="card-img-top mt-2 mb-0" src="img/apple-watch-series-4.jpg"
+                              alt="Card image cap" style="width: 100px; height: 130px;">
                            <div class="card-body mt-2 p-0">
                               <h5 class="card-title" style="font-size: 15px;">Apple Watch Series 4 40mm</h5>
                            </div>
@@ -2036,38 +2051,80 @@
                      <div class="col-lg-8">
                         <p class="mb-0">Deliver by:</p>
                         <div class="form-check mt-0">
-                           <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                           <input class="form-check-input" type="radio" name="exampleRadios" id="quotetext"
                               value="option1" checked>
-                           <label class="form-check-label" for="exampleRadios1">
+                           <label class="form-check-label" for="quotetext">
                               Text (Instant)
                            </label>
                         </div>
                         <div class="form-check">
-                           <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                           <input class="form-check-input" type="radio" name="exampleRadios" id="quoteemail"
                               value="option2">
-                           <label class="form-check-label" for="exampleRadios2">
+                           <label class="form-check-label" for="quoteemail">
                               Email (Instant)
                            </label>
                         </div>
                         <div class="form-check">
-                           <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                           <input class="form-check-input" type="radio" name="exampleRadios" id="quotephone"
                               value="option3">
-                           <label class="form-check-label" for="exampleRadios3">
+                           <label class="form-check-label" for="quotephone">
                               Phone Call
                            </label>
+                           <hr>
                         </div>
-                        <div class="form-group">
-                           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="*Name">
+                        <div class="row textinstant">
+                           <div class="col-md-12">
+                              <div class="form-group">
+                                 Text To:
+                                 <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1"
+                                    value="87609369" readonly>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              Text From:
+                              <div class="form-group">
+                                 <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1"
+                                    placeholder="*Phone">
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="form-group">
+                                 <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1"
+                                    rows="5" placeholder="Message (optional)"></textarea>
+                              </div>
+                           </div>
                         </div>
-                        <div class="form-group">
-                           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="*Email">
+                        <div class="row mailinstant" style="display: none;">
+                           <div class="col-md-12">
+                              <div class="form-group">
+                                 Mail To:
+                                 <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1"
+                                    value="Powerfixsale@outlook.com" readonly>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              Mail From:
+                              <div class="form-group">
+                                 <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1"
+                                    placeholder="*Mail">
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="form-group">
+                                 <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1"
+                                    rows="5" placeholder="Message (optional)"></textarea>
+                              </div>
+                           </div>
                         </div>
-                        <div class="form-group">
-                           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="*Phone">
-                        </div>
-                        <div class="form-group">
-                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                              placeholder="Message (optional)"></textarea>
+                        <div class="row phoneinstant" style="display: none;">
+                           <div class="col-md-12">
+                              <div class="form-group">
+                                 Click to Call:
+                                 <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1"
+                                    value="87609369" readonly onclick="window.location.href='tel:87609369'"
+                                    style="cursor: pointer;">
+                              </div>
+                           </div>
                         </div>
                         <button class="w-100 mb-3" style="background-color: rgb(160, 38, 38); color: white;">GET QUOTE
                            NOW</button>
@@ -2451,6 +2508,22 @@
       $('.problemname').click(function () {
          var uy = $('h4', this).text();
          document.getElementById("problem").innerHTML = uy;
+      });
+
+      $("#quotetext").click(function () {
+         $(".textinstant").show();
+         $(".mailinstant").hide();
+         $(".phoneinstant").hide();
+      });
+      $("#quoteemail").click(function () {
+         $(".textinstant").hide();
+         $(".mailinstant").show();
+         $(".phoneinstant").hide();
+      });
+      $("#quotephone").click(function () {
+         $(".textinstant").hide();
+         $(".mailinstant").hide();
+         $(".phoneinstant").show();
       });
    </script>
 
