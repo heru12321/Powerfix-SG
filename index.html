@@ -105,7 +105,7 @@
                      <div class="row mt-0">
                         <div class="col-lg-12">
                            <div class="row mt-0">
-                              <div class="col-lg-11">
+                              <div class="col-lg-12">
                                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                     <ul class="navbar-nav" style="font-size: 13px;">
                                        <li class="nav-item active">
@@ -146,28 +146,26 @@
                                        <li class="nav-item">
                                           <a class="nav-link tombol mr-0" href="#">BUSINESS CLIENT LOGIN</a>
                                        </li>
+                                       <form id="searchForm" onsubmit="return checkInput()">
+                                          <div class="input-group input-group-sm mt-2 ml-2" aria-label="Small"
+                                             aria-describedby="inputGroup-sizing-sm">
+                                             <input id="isisiswa" class="form-control" autocomplete="off">
+                                             <div class="input-group-append">
+                                                <button class="btn btn-sm" type="submit"
+                                                   style="background-color:rgb(160, 38, 38)">
+                                                   <i class="bi bi-search tombol"
+                                                      style="font-size: 13px; color:white"></i>
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </form>
                                     </ul>
                                  </div>
                               </div>
                               <div class="col-lg-1 delmobile nav-link mr-0">
-                                 <i class="bi bi-search" style="font-size: 20px; color:white" href="#"
-                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false"></i>
-                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <form id="searchForm" onsubmit="return checkInput()">
-                                       <div class="input-group">
-                                          <input id="isisiswa" class="form-control" autocomplete="off">
-                                          <div class="input-group-append">
-                                             <button class="btn btn-navbar"
-                                                style="background: #FFF6E3; left: 0px; border-radius: 0px 40px 40px 0px"
-                                                type="submit">
-                                                <i class="fas fa-search"></i>
-                                             </button>
-                                             <!-- Submit JQuery di Head-->
 
-                                          </div>
-                                       </div>
-                                    </form>
+                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
                                  </div>
                               </div>
                            </div>
@@ -2052,7 +2050,7 @@
                         <p class="mb-0">Deliver by:</p>
                         <div class="form-check mt-0">
                            <input class="form-check-input" type="radio" name="exampleRadios" id="quotetext"
-                              value="option1" checked>
+                              value="option1">
                            <label class="form-check-label" for="quotetext">
                               Text (Instant)
                            </label>
@@ -2072,7 +2070,7 @@
                            </label>
                            <hr>
                         </div>
-                        <div class="row textinstant">
+                        <div class="row textinstant" style="display: none;">
                            <div class="col-md-12">
                               <div class="form-group">
                                  Text To:
@@ -2126,11 +2124,13 @@
                               </div>
                            </div>
                         </div>
-                        <button class="w-100 mb-3" style="background-color: rgb(160, 38, 38); color: white;">GET QUOTE
+                        <button class="w-100 mb-3" style="background-color: rgb(160, 38, 38); color: white;"
+                           onclick="getquote()">GET QUOTE
                            NOW</button>
                      </div>
                   </div>
-                  <div class="row justify-content-center mr-3 ml-3 w-100 mt-1 p-3" style="background-color: white;">
+                  <div class="row justify-content-center mr-3 ml-3 w-100 mt-1 p-3"
+                     style="background-color: white; display: none;" id="selectedrepair">
                      <p class="w-100 mb-0"><u>Selected Repair</u></p>
                      <p class="w-100 mt-0 mb-0"><strong>Device: <span id="device"
                               style="color: rgb(160, 38, 38);"></span></strong></p>
@@ -2146,7 +2146,8 @@
                         pricing, we'll match it! Thousands of people have loved our service and we're sure you will too.
                         Get your price quote now to get started with your repair. Look forward to speaking with you!</p>
                   </div>
-                  <div class="row justify-content-center mr-3 ml-3 w-100 mt-1 p-3" style="background-color: white;">
+                  <div class="row justify-content-center mr-3 ml-3 w-100 mt-1 p-3"
+                     style="background-color: white; display: none;" id="selectedstore">
                      <p class="w-100 mb-0"><u>Selected Store:</u></p>
                      <p class="w-100 mb-0">Powerfix</p>
                      <p class="w-100 mt-0 mb-0">12 woodland square, tower 1
@@ -2525,6 +2526,11 @@
          $(".mailinstant").hide();
          $(".phoneinstant").show();
       });
+
+      function getquote() {
+         $("#selectedrepair").show();
+         $("#selectedstore").show();
+      }
    </script>
 
 </body>
