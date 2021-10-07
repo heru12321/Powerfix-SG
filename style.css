@@ -74,6 +74,10 @@ body {
 	#myBtn:hover {
 		background-color: #555;
 	}
+
+	.cforjumbotron {
+		height: 300px;
+	}
 }
 
 /* Mobile */
@@ -116,6 +120,14 @@ body {
 	}
 	.jumbotron .display-3 {
 		font-size: 20px !important;
+	}
+	.cforjumbotron {
+		height: 450px !important;
+	}
+}
+@media (max-width: 500px) {
+	.cforjumbotron {
+		height: 250px !important;
 	}
 }
 /* Navbar */
@@ -207,15 +219,12 @@ body {
 	font-weight: 400;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 	font-size: 80px;
-	font-family: 'Open Sans';
 }
 
 .jumbotron .display-3 {
 	color: white;
 	text-align: center;
-	font-family: 'Open Sans';
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-	font-family: 'Open Sans';
 	font-weight: 400;
 	font-size: 27px;
 }
