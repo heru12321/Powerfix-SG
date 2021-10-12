@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+
+<link>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../butstrep/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+<!-- My CSS -->
+<link rel="stylesheet" href="../style.css">
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../butstrep/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+<!-- CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+<link href="../img/logo-pf (1).png" rel="shortcut icon">
+<title>Track Your Repair-Powerfix</title>
+</head>
+
+<body>
+    <div class="site-wrapper">
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;"><i
+                class="bi bi-chevron-double-up"></i></button>
+
+        <!-- Top Page *Hilang saat discroll down -->
+        <div id="topnav">
+            <div class="container">
+                <div class="row p-3 pb-0">
+                    <div class="col-lg-8" id="toptext">
+                        <a href="https://www.google.com/maps/place/12+Woodlands+Square,+tower+1+%2303,+Singapura+737715/@1.4348515,103.782449,17z/data=!3m1!4b1!4m5!3m4!1s0x31da13a8d2a2a525:0x7de8fde29f5b628!8m2!3d1.4348515!4d103.7846377"
+                            style="color: whitesmoke;" target="_blank"><i class="bi bi-house-door-fill"></i> 12 woodland
+                            square, tower 1
+                            #03-69 Singapore 737715</a><br id="lbmobile">
+                        <a href="mailto:Powerfixsale@outlook.com" style="color: whitesmoke; margin-left: 15px;"><i
+                                class="bi bi-envelope-fill"></i>
+                            Powerfixsale@outlook.com</a>
+                    </div>
+
+                    <div class="col-lg-4 text-right" id="topicon">
+                        <a href="#" style="font-size: 18px; color: whitesmoke;"><i class="bi bi-facebook"></i></a><a
+                            style="font-size: 18px; color: whitesmoke;"> / </a>
+                        <a href="#" style="font-size: 18px; color: whitesmoke;"><i class="bi bi-twitter"></i></a>
+                        <a style="font-size: 18px; color: whitesmoke;"> / </a>
+                        <a href="#" style="font-size: 18px; color: whitesmoke;"><i class="bi bi-instagram"></i></a>
+                        <a style="font-size: 18px; color: whitesmoke;"> / </a>
+                        <a href="#" style="font-size: 18px; color: whitesmoke;"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <!-- Navbar Fixed-->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top topscroll" id="bgnavbar" style="z-index: 2;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 align-self-center">
+                            <a style="display: inline-block !important; vertical-align: top  !important;"
+                                class="navbar-brand" href="#"><img src="../img/logo-pf (1).png"
+                                    class="img-fluid img-mobile delmobile"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+                                <i class="bi bi-three-dots" style="font-size: 30px;"></i>
+                            </button>
+                        </div>
+
+                        <div class="col-lg-9">
+                            <div class="row mb-0 pb-0 delmobile" style="height: 70px;">
+                                <div class="col-lg-12">
+                                    <div class="row mb-0 pb-0">
+                                        <div class="col pr-0 mr-0"
+                                            onclick="window.open('https://wa.link/ejuyce', '_blank')"
+                                            style="cursor: pointer;">
+                                            <figure class="figure" style="display: flex; margin-left: 145px;">
+                                                <i class="bi bi-telephone-fill mr-2"
+                                                    style="font-size: 30px; transform: scale(-1, 1); color: white;"></i>
+                                                <figcaption class="figure-caption" style="flex-direction: column;">
+                                                    <a
+                                                        style="margin-bottom: 0px; margin-top: 5px; font-size: 12px; color: white;">
+                                                        <strong>CONTACT US</strong>
+                                                    </a>
+                                                    <p style="color: rgb(160, 38, 38);"><strong>87609369</strong></p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <figure class="figure" style="display: flex;">
+                                                <i class="bi bi-clock mr-2" style="font-size: 30px; color: white;"></i>
+                                                <figcaption class="figure-caption" style="flex-direction: column;">
+                                                    <a
+                                                        style="margin-bottom: 0px;  margin-top: 5px; font-size: 12px; color: white;">
+                                                        <strong>STORE HOURS</strong>
+                                                    </a>
+                                                    <p style="color: rgb(160, 38, 38);"><strong>Mon - Sun: 11AM -
+                                                            8PM</strong></p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-lg-3 text-right mt-3">
+                                            <a href="../start-a-repair.html" class="btn rounded-0"
+                                                style="background-color: rgb(160, 38, 38); color: white;"><strong>Start
+                                                    A
+                                                    Repair</strong></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row mt-0 justify-content-end pr-0">
+                                <div class="col mb-2 pr-0 mr-0 w-100">
+                                    <div class="collapse navbar-collapse mr-0 pr-0" id="navbarNavAltMarkup">
+                                        <ul class="navbar-nav" style="font-size: 13px;">
+                                            <li class="nav-item active">
+                                                <a class="nav-link mr-0" href="../index.html">HOME</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link mr-0" href="../ourservice.html">OUR SERVICES</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link mr-0" href="../trackrepair.html">TRACK YOUR
+                                                    REPAIR</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link mr-0 dropdown-toggle" href="#" id="navbarDropdown"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    SHOP
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" href="../inventory.html"
+                                                        style="font-size: 13px;">VIEW
+                                                        INVENTORY</a>
+                                                    <a class="dropdown-item" href="../cart.html"
+                                                        style="font-size: 13px;">CART</a>
+                                                    <a class="dropdown-item" href="../cart.html"
+                                                        style="font-size: 13px;">CHECKOUT</a>
+                                                    <a class="dropdown-item dropdown-toggle" href="#"
+                                                        style="font-size: 13px;">MY
+                                                        ACCOUNT</a>
+                                                    <ul class="dropdown-menu" style="left:100%; top:-4px;">
+                                                        <li><a class="dropdown-item" href="../error.html"
+                                                                style="font-size: 13px; color: black;">ACCOUNT
+                                                                DETAILS</a></li>
+                                                        <li><a class="dropdown-item" href="../error.html"
+                                                                style="font-size: 13px; color: black;">ORDERS</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link mr-0 dropdown-toggle" href="#" id="navbarDropdown"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    ABOUT US
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" style="font-size: 13px; color: black;"
+                                                        href="../aboutus-blog.html">BLOG</a>
+                                                    <a class="dropdown-item" style="font-size: 13px; color: black;"
+                                                        href="../aboutus-contact.html">CONTACT US</a>
+                                                    <a class="dropdown-item" style="font-size: 13px; color: black;"
+                                                        href="../aboutus-ourteam.html">OUR TEAM</a>
+                                                </div>
+                                            </li>
+                                            <form id="searchForm" onsubmit="return checkInput()">
+                                                <div class="input-group input-group-sm mt-2 pl-5 w-100 delmobile"
+                                                    aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                    <input id="isisiswa" class="form-control" autocomplete="off">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-sm" type="submit"
+                                                            style="background-color:rgb(160, 38, 38)">
+                                                            <i class="bi bi-search tombol"
+                                                                style="font-size: 13px; color:white"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                function checkInput() {
+                                    var query = document.getElementById('isisiswa').value;
+                                    window.find(query);
+                                    return false;
+                                }
+                            </script>
+                        </div>
+                    </div>
+            </nav>
+            <!-- Akhir Navbar -->
+        </header>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron-test jumbotron-fluid mt-0 testimonial">
+            <div class="container pt-5" style="z-index: 1; height: 330px;">
+                <div class="row pt-5">
+                    <div class="col-sm-7">
+                        <h1 style="color: white; padding-top: 80px;">Data Backup & Recovery</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Jumbotron -->
+
+        <!-- Card for Jumbotron -->
+        <div class="row p-5 mt-3">
+            <div class="col-lg-3">
+                <div class="div">
+                    <h5 class="mb-4">STORE INFORMATION</h5>
+                    <a href="https://www.google.com/maps/place/12+Woodlands+Square,+tower+1+%2303,+Singapura+737715/@1.4348515,103.782449,17z/data=!3m1!4b1!4m5!3m4!1s0x31da13a8d2a2a525:0x7de8fde29f5b628!8m2!3d1.4348515!4d103.7846377"
+                        target="_blank" style="color: black;"><i class="bi bi-building"></i>
+                        12 woodland square, tower 1
+                        #03-69 Singapore 737715</a><br>
+                    <a href="https://wa.link/ejuyce" target="_blank" style="color: black;"><i
+                            class="bi bi-telephone"></i>
+                        87609369</a><br>
+                    <a href="mailto:Powerfixsale@outlook.com" style="color: black;"><i class="bi bi-envelope"></i>
+                        Powerfixsale@outlook.com</a>
+                </div>
+                <div class="divlatnews">
+                    <div class="mt-5">
+                        <h5>LATEST NEWS</h5>
+                    </div>
+                    <div style="display: flex;" class="mt-4 w-100">
+                        <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg"
+                            alt="Quincy Larson's profile picture" style="width: 70px; height: 70px;">
+                        <div style="flex-direction: column;" class="ml-2">
+                            <h6 style="font-size: 15px; margin-bottom: 0;">Dropped Your Phone in Water? Here Are 8
+                                Things You Should Do
+                            </h6>
+                            <p style="font-size: 14px; color: grey;">May 18, 2022</p>
+                        </div>
+                    </div>
+                    <hr class="mt-1 mb-1">
+                    <div style="display: flex;" class="mt-4 w-100">
+                        <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg"
+                            alt="Quincy Larson's profile picture" style="width: 70px; height: 70px;">
+                        <div style="flex-direction: column;" class="ml-2">
+                            <h6 style="font-size: 15px; margin-bottom: 0;">5 Tips on Making Your Phone Faster</h6>
+                            <p style="font-size: 14px; color: grey;">Sep 28, 2022</p>
+                        </div>
+                    </div>
+                    <hr class="mt-1 mb-1">
+                    <div style="display: flex;" class="mt-4 w-100">
+                        <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg"
+                            alt="Quincy Larson's profile picture" style="width: 70px; height: 70px;">
+                        <div style="flex-direction: column;" class="ml-2">
+                            <h6 style="font-size: 15px; margin-bottom: 0;">Top 3 Tips to Enjoy Working Outside</h6>
+                            <p style="font-size: 14px; color: grey;">Apr 10, 2022</p>
+                        </div>
+                    </div>
+                    <hr class="mt-1 mb-1">
+                    <div style="display: flex;" class="mt-4 w-100">
+                        <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg"
+                            alt="Quincy Larson's profile picture" style="width: 70px; height: 70px;">
+                        <div style="flex-direction: column;" class="ml-2">
+                            <h6 style="font-size: 15px; margin-bottom: 0;">Sneak Peek: The Latest Apple iPhone Release
+                            </h6>
+                            <p style="font-size: 14px; color: grey;">May 18, 2022</p>
+                        </div>
+                    </div>
+                    <hr class="mt-1 mb-1">
+                    <div style="display: flex;" class="mt-4 w-100">
+                        <img src="https://freecodecamp.s3.amazonaws.com/quincy-twitter-photo.jpg"
+                            alt="Quincy Larson's profile picture" style="width: 70px; height: 70px;">
+                        <div style="flex-direction: column;" class="ml-2">
+                            <h6 style="font-size: 15px; margin-bottom: 0;">The Scariest Tablet Repair Mistakes</h6>
+                            <p style="font-size: 14px; color: grey;">May 18, 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <img src="../img/Data-Backup-Image-scaled.jpg" class="img-fluid mb-5">
+                <h3>Woodlands Tower Data Recovery Center</h3>
+                <hr style="border: 1px solid rgb(160, 38, 38); width: 40px;" align="left">
+                <h5>We get back mission critical data after hardware and software failures</h5>
+                <p style="color: black;" class="mt-3">If you have lost access to important files due to a hardware
+                    failure, software
+                    issues or for any other reason, Secure Data Recovery Services can help. We have excellent success
+                    with raid data recovery in Richmond including RAID 5 data recovery resources.</p>
+                <p style="color: black;">Our experienced engineering team and state-of-the-art data recovery
+                    laboratory
+                    provides excellent
+                    results for hard drive repair services to satisfied clients throughout the area. You can drop
+                    off
+                    your case today for a risk-free media evaluation. To get started, contact our customer service
+                    team.
+                </p>
+                <p style="color: black;">We have a specialized set of data repair tools that allow us to maintain
+                    our exceptional success
+                    rate.</p>
+
+                <p style="color: black;">We also take appropriate steps to protect our clients’ confidentiality. Our
+                    Richmond team uses
+                    industry standard protocols to protect recovered data, and we fully comply with HIPAA, NIST,
+                    PCI-DSS, FERPA and various other privacy laws.</p>
+                </p>
+
+                <a href="../start-a-repair.html" class="btn mt-4 rounded-0"
+                    style="background-color: rgb(160, 38, 38); color: white;">GET A FREE QUOTE</a>
+            </div>
+
+            <div class="col-lg-3">
+                <ul>
+                    <li>Hardware Failure</li>
+                    <li>Disc Drive Failure</li>
+                    <li>Physical Drive Damage</li>
+                    <li>Important File Recovery</li>
+                    <li>Backup Recovery System Installation</li>
+                </ul>
+            </div>
+            <div class="row mt-5 w-100">
+                <div class="col">
+                    <!-- Manipulasi kekosongan -->
+                </div>
+                <div class="col-lg-9">
+                    <hr><br>
+                    <hr><br>
+                    <p><strong>Data Backup & Recovery Services in Woodlands</strong></p>
+                    <p>Have you ever experienced hardware or software failure that cost you hours of hard work and other
+                        important files? We know it isn’t the easiest problem to solve. That’s why we trained our
+                        technicians to provide solutions.</p>
+                    <p> Our data backup and recovery services are available for cell phone and computer users! Lost
+                        access
+                        to your phone that contains personal information? Did your computer’s hard drive fail and you
+                        can’t
+                        get your important files back? Computer Cave’s got you covered.</p>
+                    <br>
+                    <p><strong>Secure Data Recovery</strong></p>
+                    <p>
+                        Our data recovery services are 100% secure. Using advanced and trusted software such as RAID 5
+                        to
+                        perform recoveries, which helped our data recovery success rate to stay high. Secure data
+                        recovery
+                        methods ensure that the data we’ll recover for you stays private.
+                    </p>
+                    <p>
+                        Secure data recoveries also mean data will remain intact. That’s why we make sure to only use
+                        highly
+                        regarded data recovery software in the tech industry.
+                    </p>
+                    <br>
+                    <p><strong>Privacy Law Compliant</strong></p>
+                    <p>Our approach to data recovery puts your privacy and safety as the #1 priority. Our Richmond team
+                        uses industry-standard protocols to protect what’s yours. All our recovery methods are fully
+                        compliant with HIPAA, NIST, PCI-DSS, FERPA, and other privacy laws.</p>
+                    <p>Our full compliance with data privacy laws helps keep our customers safe from malicious attacks
+                        on
+                        their personal data and information. With Computer Cave, your data is safe.</p>
+                    <br>
+                    <p><strong>Experienced Team</strong></p>
+                    <p>With hundreds of data recovery services performed, our engineering team is full of experienced
+                        individuals with adequate knowledge and professional training inside state-of-the-art data
+                        recovery
+                        laboratories.</p>
+                    <p>Their experience provides excellent results for our external and computer hard drive repair
+                        services, earning us satisfied clients throughout Richmond and surrounding areas.</p>
+                    <P>Our engineers are professional and approachable. Ask them any questions you have about data
+                        backup
+                        and recovery, and you’ll surely get the answers you need!</P>
+                    <br>
+                    <p><strong>Get Started Today</strong></p>
+
+                    <p>Need to get your data back or want to start protecting it? Make sure to reach out to our customer
+                        service team or click here to get a free quote for the data recovery or hard drive repair you’re
+                        looking for.</p>
+
+                    <p>We offer expert data recovery services for the following issues:</p>
+                    <ul>
+                        <li>Hardware Failure</li>
+                        <li>Hard Disc Drive Failure</li>
+                        <li>Physical Drive Damage</li>
+                        <li>Liquid Damage</li>
+                        <li>Important File Recovery</li>
+                    </ul>
+                    <p> We also offer backup and recovery system installations to our customers who want to protect
+                        their
+                        data from hardware, software, and handling failure.</p>
+                    <br>
+                    <p><strong>Other Services</strong></p>
+                    <p> Our data backup & recovery services aren’t limited to retrieving lost data from computer or
+                        other
+                        device failures. You can also call us for physical drive repairs and other hardware fixes!</p>
+                    <br>
+                    <p><strong>Got Questions?</strong></p>
+                    <p>Can’t find the information you need on this page? Call us at (804) 299-2476 to get in touch with
+                        our
+                        staff and we’ll be happy to answer your questions on backup, recovery, and storage hardware
+                        repair.</p>
+                    <br>
+                    <p><strong>Visit Us</strong></p>
+                    <p>If you’re looking for quick data recovery services, you can drop by our Richmond store! Our staff
+                        will assist you right away.</p>
+                    <a href="https://www.google.com/maps/place/12+Woodlands+Square,+tower+1+%2303,+Singapura+737715/@1.4348515,103.782449,17z/data=!3m1!4b1!4m5!3m4!1s0x31da13a8d2a2a525:0x7de8fde29f5b628!8m2!3d1.4348515!4d103.7846377"
+                        target="_blank" style="color: black;"><i class="bi bi-building"></i>
+                        12 woodland square, tower 1
+                        #03-69 Singapore 737715</a><br>
+                    <a href="https://wa.link/ejuyce" target="_blank" style="color: black;"><i
+                            class="bi bi-telephone"></i>
+                        87609369</a><br>
+                    <a href="mailto:Powerfixsale@outlook.com" style="color: black;"><i class="bi bi-envelope"></i>
+                        Powerfixsale@outlook.com</a>
+                </div>
+            </div>
+        </div>
+        <!--Akhir Card for Jumbotron  -->
+
+        <!-- Kesimpulan -->
+        <section style="background-color: rgb(48, 42, 42); margin-top: 100px;">
+            <div class="row p-5">
+                <div class="col-lg-5">
+                    <img src="../img/logo-pf (1).png" class="img-fluid mb-4">
+                    <p style="color: antiquewhite;">Being your one-stop tech spot means that unlike other shops who rely
+                        on
+                        sending off complex repairs to specialized service centers. We are that specialized service
+                        center.
+                        This
+                        ensures that you, our clients always receive the best quality service and the best value.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h4 style="color: white;  font-size: 25px;">Our Service</h4>
+                    <ul style="list-style: none; color: antiquewhite;" class="pl-0 mt-3">
+                        <li>> <a href="../our-service/phone-repair.html" style="color: antiquewhite"
+                                class="linksimpul">Android Repair</a></li><br>
+                        <li>> <a href="../our-service/phone-repair.html" style="color: antiquewhite"
+                                class="linksimpul">iPhone Repair</a></li><br>
+                        <li>> <a href="../our-service/pcmac-repair.html" style="color: antiquewhite"
+                                class="linksimpul">Computer Repair</a></li><br>
+                        <li>> <a href="../our-service/pcmac-repair.html" style="color: antiquewhite"
+                                class="linksimpul">Mac Repair</a></li><br>
+                        <li>> <a href="../our-service/gameconsole-repair.html" style="color: antiquewhite"
+                                class="linksimpul">Console Repair</a></li><br>
+                        <li>> <a href="../our-service/data-backup-recovery.html" style="color: antiquewhite"
+                                class="linksimpul">Data Recovery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4 style="color: white;">Contact Us</h4>
+                    <p style="color: antiquewhite;">Woodlands One-Stop Tech Spot!</p>
+                    <a href="https://www.google.com/maps/place/12+Woodlands+Square,+tower+1+%2303,+Singapura+737715/@1.4348515,103.782449,17z/data=!3m1!4b1!4m5!3m4!1s0x31da13a8d2a2a525:0x7de8fde29f5b628!8m2!3d1.4348515!4d103.7846377"
+                        target="_blank" style="color: antiquewhite;"><i class="bi bi-building"></i>
+                        12 woodland square, tower 1
+                        #03-69 Singapore 737715</a><br>
+                    <a href="https://wa.link/ejuyce" target="_blank" style="color: antiquewhite;"><i
+                            class="bi bi-telephone"></i>
+                        87609369</a><br>
+                    <a href="mailto:Powerfixsale@outlook.com" style="color: antiquewhite;"><i
+                            class="bi bi-envelope"></i>
+                        Powerfixsale@outlook.com</a>
+                    <p class="mt-3" style="color: antiquewhite;">iPhone, iPod, iPad and Mac are registered trademarks of
+                        Apple,
+                        Inc. Powerfix is an independent service company and is in no way affiliated with Apple Inc.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- AKhir kesimpulan -->
+
+        <!-- Footer -->
+        <section>
+            <div class="row justify-content-center pr-5 pl-5 pt-3" style="background-color: rgb(32, 30, 30);">
+                <div class="col-lg-6 text-center">
+                    <p style="color: whitesmoke; font-size: 13px;">© Copyright 2021. Powerfix</p>
+                </div>
+                <div class="col-lg-6 text-center pb-3">
+                    <a style="font-size: 13px; border-bottom: none !important;" href="../index.html"><span
+                            style="color: whitesmoke; font-size: 13px;">Home</span></a><span
+                        style="color: whitesmoke; font-size: 13px; margin: 8px;"> / </span>
+                    <a style="font-size: 13px; border-bottom: none !important;" href="../aboutus-contact.html"><span
+                            style="color: whitesmoke; font-size: 13px;">Contact Us</span></a><span
+                        style="color: whitesmoke; font-size: 13px; margin: 8px;"> / </span>
+                    <a style="font-size: 13px; border-bottom: none !important;"
+                        href="../footer/privacy-policy.html"><span style="color: whitesmoke; font-size: 13px;">Privacy
+                            Policy</span></a><span style="color: whitesmoke; font-size: 13px; margin: 8px;"> / </span>
+                    <a style="font-size: 13px; border-bottom: none !important;" href="../footer/terms.html"><span
+                            style="color: whitesmoke; font-size: 13px;">Terms</span></a><span
+                        style="color: whitesmoke; font-size: 13px; margin: 8px;"> / </span>
+                    <a style="font-size: 13px; border-bottom: none !important;" href="../footer/sitemap.html"><span
+                            style="color: whitesmoke; font-size: 13px;">Sitemap</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- akhir footer -->
+    </div>
+    <!-- Akhir site wrapper-->
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".topscroll");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > 10);
+            });
+        });
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+            if (!$(this).next().hasClass('show')) {
+                $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+            }
+            var $subMenu = $(this).next('.dropdown-menu');
+            $subMenu.toggleClass('show');
+
+
+            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+                $('.dropdown-submenu .show').removeClass('show');
+            });
+
+
+            return false;
+        });
+    </script>
+
+</body>
+
+</html>

@@ -14,6 +14,9 @@ body {
 	#lbmobile {
 		display: none;
 	}
+	#bgnavbar {
+		background-color: rgba(0, 0, 0, 0.7);
+	}
 	.navbar {
 		position: fixed;
 		top: 58px;
@@ -124,6 +127,19 @@ body {
 	.cforjumbotron {
 		height: 450px !important;
 	}
+	#bgnavbar {
+		background-color: rgb(160, 38, 38);
+		z-index: 2 !important;
+	}
+	#topnav {
+		margin-top: 65px;
+		background-color: rgb(32, 30, 30);
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		font-weight: 400;
+		display: flex;
+		align-items: center;
+	}
 }
 @media (max-width: 500px) {
 	.cforjumbotron {
@@ -138,10 +154,6 @@ body {
 	font-weight: 400;
 	display: flex;
 	align-items: center;
-}
-
-#bgnavbar {
-	background-color: rgba(0, 0, 0, 0.7);
 }
 
 #bgptrn {
@@ -188,6 +200,13 @@ body {
 
 .linksimpul:hover {
 	color: rgba(160, 38, 38, 0.9) !important;
+}
+
+.hovmove:hover {
+	cursor: pointer;
+	margin-left: 10px;
+	font-weight: 700;
+	color: rgb(160, 38, 38) !important;
 }
 
 /*Jumbotron*/
