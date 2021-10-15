@@ -549,14 +549,14 @@
         });
 
         //Cart
-        $('.add-to-cart').click(function () {
+        $("body").on("click", ".add-to-cart", function () {
             $('#cart').append('<div style="display: flex;" class="mt-4 w-100"><img src="' + $(this).parent().find('#productimg').attr('src') + '"style="width: 70px;height: 70px;"><div style="flex-direction: column;" class="ml-2"> <a style="font-size: 13px; margin-bottom: 0; color: black;">' + $(this).parent().find('#productname').text() + '</a></div></div>');
             $('#rowtotalprice').show();
             $('#rowdelcart').show();
         });
         var fadeTime = 300;
         /* Assign actions */
-        $('.add-to-cart').click(function () {
+        $("body").on("click", ".add-to-cart", function () {
             updateQuantity(this);
         });
         $('#delcart').click(function () {
