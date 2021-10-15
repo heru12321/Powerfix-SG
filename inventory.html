@@ -389,59 +389,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            $('.add-to-cart').click(function () {
-                $('#cart').append('<div style="display: flex;" class="mt-4 w-100"><img src="' + $(this).parent().find('#productimg').attr('src') + '"style="width: 70px;height: 70px;"><div style="flex-direction: column;" class="ml-2"> <a style="font-size: 13px; margin-bottom: 0; color: black;">' + $(this).parent().find('#productname').text() + '</a></div></div>');
-
-                $('#rowtotalprice').show();
-                $('#rowdelcart').show();
-            });
-
-            $(document).ready(function () {
-                var fadeTime = 300;
-                /* Assign actions */
-                $('.add-to-cart').click(function () {
-                    updateQuantity(this);
-                });
-
-                $('#delcart').click(function () {
-                    if (window.confirm('Delete Cart?')) {
-                        window.location.reload();
-                    } else {
-                        alert('Delete Cart Aborted!');
-                    }
-                });
-
-                var subtotal = 0;
-                /* Recalculate cart */
-                function recalculateCart(price) {
-                    subtotal += parseFloat(price)
-                    document.getElementById("totalprice").innerHTML = subtotal;
-                }
-
-
-                /* Update quantity */
-                function updateQuantity(quantityInput) {
-                    /* Calculate line price */
-                    var productRow = $(quantityInput).parent();
-                    var price = parseFloat(productRow.find('.priceitem').text());
-                    recalculateCart(price);
-                    // var quantity = $(quantityInput).val();
-                    // var linePrice = price;
-                    // $('.priceitem').text(price);
-
-                    // /* Update line price display and recalc cart totals */
-                    // $('#totalprice').each(function () {
-                    //     $(this).fadeOut(fadeTime, function () {
-                    //         $(this).text(linePrice.toFixed(2));
-                    //         $(this).fadeIn(fadeTime);
-                    //     });
-                    // });
-                }
-            });
-
-        </script>
-
         <!--Akhir Card for Jumbotron  -->
 
         <!-- Kesimpulan -->
@@ -562,18 +509,15 @@
             var $subMenu = $(this).next('.dropdown-menu');
             $subMenu.toggleClass('show');
 
-
             $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
                 $('.dropdown-submenu .show').removeClass('show');
             });
-
 
             return false;
         });
 
         //Sorting harga barang di shop(inventory.html)
         var $divs = $("div.product");
-
         $('#sortltoh').on('click', function () {
             var alphabeticallyOrderedDivs = $divs.sort(function (a, b) {
                 return $(a).find("span").text() > $(b).find("span").text() ? 1 : -1;
@@ -581,7 +525,6 @@
             $("#shopcontent").html(alphabeticallyOrderedDivs);
 
         });
-
         $('#sorthtol').on('click', function () {
             var numericallyOrderedDivs = $divs.sort(function (a, b) {
                 return $(b).find("span").text() > $(a).find("span").text() ? 1 : -1;
@@ -604,6 +547,39 @@
             $(".productmac").hide();
             $(".productpad").show();
         });
+
+        //Cart
+        $('.add-to-cart').click(function () {
+            $('#cart').append('<div style="display: flex;" class="mt-4 w-100"><img src="' + $(this).parent().find('#productimg').attr('src') + '"style="width: 70px;height: 70px;"><div style="flex-direction: column;" class="ml-2"> <a style="font-size: 13px; margin-bottom: 0; color: black;">' + $(this).parent().find('#productname').text() + '</a></div></div>');
+            $('#rowtotalprice').show();
+            $('#rowdelcart').show();
+        });
+        var fadeTime = 300;
+        /* Assign actions */
+        $('.add-to-cart').click(function () {
+            updateQuantity(this);
+        });
+        $('#delcart').click(function () {
+            if (window.confirm('Delete Cart?')) {
+                window.location.reload();
+            } else {
+                alert('Delete Cart Aborted!');
+            }
+        });
+
+        var subtotal = 0;
+        /* Recalculate Cart */
+        function recalculateCart(price) {
+            subtotal += parseFloat(price)
+            document.getElementById("totalprice").innerHTML = subtotal;
+        }
+
+        /* Update quantity */
+        function updateQuantity(quantityInput) {
+            var productRow = $(quantityInput).parent();
+            var price = parseFloat(productRow.find('.priceitem').text());
+            recalculateCart(price);
+        }
     </script>
 
 </body>
